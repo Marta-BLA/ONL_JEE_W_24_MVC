@@ -11,6 +11,12 @@ public class RandomController {
 
     private Random random = new Random();
 
+    @GetMapping(value = "/showRandom", produces = "text/plain;charset=UTF-8")
+    @ResponseBody
+    public String showRandom() {
+        int randomNumber = random.nextInt(100) + 1;
+        return "Wylosowano liczbę: " + randomNumber;
+    }
 
     @GetMapping(value = "/random/{min}/{max}", produces = "text/plain;charset=UTF-8")
     @ResponseBody
