@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
-import java.time.LocalTime;rc/
-
+import java.time.LocalTime;
 
 @Controller
 public class FreeTimeController {
